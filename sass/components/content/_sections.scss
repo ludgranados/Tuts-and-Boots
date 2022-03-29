@@ -1,0 +1,46 @@
+/*--- Section 1 ---*/
+@media (min-width: 768px) {
+    .hero-1 {
+        font-size: 4rem !important;
+    }
+}
+.hero-1 {
+    height: 100vh !important;
+    font-family: serif;
+    font-size: 3rem;
+    opacity: .8;
+
+    p, a {
+        color: #fff;
+        margin: auto;
+        text-shadow: -2px -1px black;
+    }
+
+    .btn {
+        width: 11vw !important; 
+        background: transparent; 
+        border: 2px solid #fff; 
+        margin: -27vh 0 19vh 48vw;
+    }
+
+    .title {
+        width: 45rem;
+        margin: auto;
+        padding-top: 24vh;
+
+        @media (min-width: 768px) {
+            padding: 13rem 0rem 0rem 9rem !important;
+        }
+
+        @media (min-width: 310px) {
+                    margin: 2rem !important;
+                    width: auto;
+                    padding: 14rem 0rem 0rem 2rem;
+        }
+    }
+    .paragraph-text {
+        width: 51vw;
+        margin: 216px;
+        font-size: x-large;
+    }
+}
