@@ -55,5 +55,6 @@
 				)
 			);
 			?>
+			<a href="mailto:ludwingranados@gmail.com" class="button">Message Us</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
