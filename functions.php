@@ -12,6 +12,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+if ( ! function_exists( 'tuts_and_boots_setup') ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -100,7 +101,13 @@ function tuts_and_boots_setup() {
 		)
 	);
 }
+endif;
 add_action( 'after_setup_theme', 'tuts_and_boots_setup' );
+
+
+
+
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -140,8 +147,12 @@ add_action( 'widgets_init', 'tuts_and_boots_widgets_init' );
 function tuts_and_boots_scripts() {
 	wp_enqueue_style( 'tuts-and-boots-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'tuts-and-boots-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'bootstrap-css', get_stylesheet_directory_uri(). '/css/bootstrap.min.css', array(), '5.0.2' );
+
 
 	wp_enqueue_script( 'tuts-and-boots-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/lib/bootstrap.min.js', array(), '5.0.2');
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
