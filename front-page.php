@@ -24,6 +24,33 @@ get_header();
     </div>
 </section>
 
+<section class="2">
+
+</section>
+
+<section class="3">
+
+</section>
+
+<section class="4">
+
+</section>
+
+<section class="5">
+
+</section>
+
+<section class="6">
+
+</section>
+
+<section class="7">
+
+</section>
+
+<section class="8">
+    
+</section>
 
 <?php
 get_footer();

@@ -716,6 +716,94 @@ textarea {
 	flex: 1 0 50%;
 }
 
+.site-header {
+	display: flex !important;
+	align-items: center;
+	width: 100%;
+	padding-right: var(--bs-gutter-x, 0.75rem);
+	padding-left: var(--bs-gutter-x, 0.75rem);
+}
+
+.site-header .site-branding {
+	position: inherit;
+	flex-wrap: nowrap;
+	margin: 4px 0 -59px 2px;
+}
+
+.site-header .site-branding .custom-logo {
+	max-width: 5rem !important;
+	margin: 0 0 0 2px;
+}
+
+.site-header .site-branding .site-title {
+	position: absolute !important;
+	margin: -5rem 0 0 5rem;
+	padding: 1rem;
+}
+
+.site-header .site-branding .site-title a {
+	text-decoration: none;
+	color: black;
+}
+
+.main-navigation {
+	margin: 0 0 -5vh 40vw;
+	width: max-content;
+}
+
+@media (min-width: 768px) {
+	.main-navigation {
+		margin: 0 0 -5vh 40vw !important;
+	}
+}
+
+.main-navigation .menu-footer-container {
+	margin: 0 0 0 5vw;
+}
+
+.main-navigation .menu-footer-container ul {
+	box-shadow: 0 0.25rem 1rem black;
+	border-radius: 2rem;
+	padding: 14px;
+	width: max-content;
+	font-size: 16px;
+	height: 3rem;
+}
+
+.main-navigation .menu-footer-container ul li a {
+	color: black !important;
+	margin: 0 0rem 0 14px;
+	width: max-content;
+}
+
+.main-navigation .menu-footer-container ul li a:hover {
+	border-bottom: 3px solid #e29912;
+	border-radius: 5px;
+}
+
+.main-navigation .button {
+	color: #fff;
+	background: orange;
+	border-radius: 5px;
+	padding: 2px 7px 4px 6px;
+	max-width: max-content;
+	font-size: 12px;
+	border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+	.main-navigation .button {
+		position: absolute;
+		margin: -6vh 0 0 35vw;
+	}
+}
+
+@media (min-width: 310px) {
+	.main-navigation .button {
+		margin: -6vh 0 0 35vw;
+	}
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
