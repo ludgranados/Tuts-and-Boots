@@ -5,10 +5,11 @@
     }
 }
 .hero-1 {
-    height: 100vh !important;
+    height: 129vh !important;
     font-family: serif;
     font-size: 3rem;
     opacity: .8;
+    margin: 5vh 0 0 0;
 
     p, a {
         color: #fff;
@@ -29,13 +30,13 @@
         padding-top: 24vh;
 
         @media (min-width: 768px) {
-            padding: 13rem 0rem 0rem 9rem !important;
+            padding: 25vh 0 0 0;
         }
 
-        @media (min-width: 310px) {
-                    margin: 2rem !important;
+        @media (max-width: 767px) {
+                    margin: 11vw;
                     width: auto;
-                    padding: 14rem 0rem 0rem 2rem;
+                    padding: 33vh 0 0 0;
         }
     }
     .paragraph-text {
