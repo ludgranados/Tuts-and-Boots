@@ -757,11 +757,11 @@ textarea {
 	}
 }
 
-.main-navigation .menu-footer-container {
+.main-navigation .menu-primary-menu-container {
 	margin: 0 0 0 5vw;
 }
 
-.main-navigation .menu-footer-container ul {
+.main-navigation .menu-primary-menu-container ul {
 	box-shadow: 0 0.25rem 1rem black;
 	border-radius: 2rem;
 	padding: 14px;
@@ -770,13 +770,13 @@ textarea {
 	height: 3rem;
 }
 
-.main-navigation .menu-footer-container ul li a {
+.main-navigation .menu-primary-menu-container ul li a {
 	color: black !important;
 	margin: 0 0rem 0 14px;
 	width: max-content;
 }
 
-.main-navigation .menu-footer-container ul li a:hover {
+.main-navigation .menu-primary-menu-container ul li a:hover {
 	border-bottom: 3px solid #e29912;
 	border-radius: 5px;
 }
@@ -784,7 +784,7 @@ textarea {
 .main-navigation .button {
 	color: #fff;
 	background: orange;
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 2px 7px 4px 6px;
 	max-width: max-content;
 	font-size: 12px;
@@ -802,6 +802,53 @@ textarea {
 	.main-navigation .button {
 		margin: -6vh 0 0 35vw;
 	}
+}
+
+.site-footer {
+	background: #000;
+	padding: 0vh 0vw 7vh 0vw;
+	margin: 0 0 -4vh 0;
+}
+
+.site-footer .site-info {
+	color: #fff;
+	padding: 5vh 0 12vh 3vw;
+}
+
+.site-footer .site-info a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.site-footer .footer-nav {
+	color: #fff;
+}
+
+.site-footer .footer-nav .menu-footer-container {
+	max-width: max-content;
+	border-block: 1px solid white;
+	border-radius: 7px;
+	padding: 6px 66px 2px 0px;
+	margin: -15vh 0 0 35vw;
+}
+
+.site-footer .footer-nav .menu-footer-container ul {
+	max-width: max-content;
+}
+
+.site-footer .footer-nav .menu-footer-container ul li {
+	list-style: none;
+}
+
+.site-footer .footer-nav .menu-footer-container ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.site-footer .footer-nav .menu-footer-container ul li a:hover {
+	color: orange;
+	border-bottom: 3px solid orange;
+	border-radius: 5px;
 }
 
 /* Posts and pages
@@ -947,10 +994,11 @@ textarea {
 }
 
 .hero-1 {
-	height: 100vh !important;
+	height: 129vh !important;
 	font-family: serif;
 	font-size: 3rem;
 	opacity: .8;
+	margin: 5vh 0 0 0;
 }
 
 .hero-1 p, .hero-1 a {
@@ -974,15 +1022,15 @@ textarea {
 
 @media (min-width: 768px) {
 	.hero-1 .title {
-		padding: 13rem 0rem 0rem 9rem !important;
+		padding: 25vh 0 0 0;
 	}
 }
 
-@media (min-width: 310px) {
+@media (max-width: 767px) {
 	.hero-1 .title {
-		margin: 2rem !important;
+		margin: 11vw;
 		width: auto;
-		padding: 14rem 0rem 0rem 2rem;
+		padding: 33vh 0 0 0;
 	}
 }
 

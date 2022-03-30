@@ -13,18 +13,23 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tuts-and-boots' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'tuts-and-boots' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
+
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'tuts-and-boots' ), 'tuts-and-boots', '<a href="http://underscores.me/">Abraham</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'tuts-and-boots' ), 'tuts-and-boots', '<a href="/">Abraham</a>' );
 				?>
 		</div><!-- .site-info -->
+<br>
+		<nav id="footer-navigation" class="footer-nav">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-2',
+					'menu_id'        => 'footer-menu',
+				)
+			);
+			?>
+		</nav><!-- #site-navigation -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
